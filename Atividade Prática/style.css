@@ -1,0 +1,96 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfd2c5;
+    color: #8b5920;
+}
+
+header {
+    background-color: #292023;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+nav > a {
+    margin: 0 30px;
+    color: white;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    background-color: #b3742d;
+    transition: background-color 0.3s;
+}
+
+section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #b3742d;
+    text-align: center;
+}
+
+h2 {
+    background-color: #292023;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#sobremim {
+    text-align: center;
+}
+
+.img2 {
+    width: 400px;
+    height: auto;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+p {
+    text-align: justify;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+}
+
+footer > p {
+    text-align: center;
+}
+
+form > input, form > textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+form > button {
+    background-color: #8b5920;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > button:hover {
+    background-color: #705c45;
+}

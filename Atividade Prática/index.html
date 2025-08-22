@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Prática - Gabriel Cancellier</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Portfólio pessoal (CV ONLINE)</h1>
+        <nav>
+            <a href="#sobremim">Sobre mim</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#formacao">Formação educacional e idiomas</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="sobremim">
+        <h2>Sobre mim</h2>
+        <p>Me chamo <span style="color: #b3742d; font-weight: bold;">Gabriel</span>, sou engenheiro civil, atuando no
+            setor de pavimentação asfáltica, onde aplico minha experiência técnica em projetos e execução de obras que
+            impactam diretamente na mobilidade e infraestrutura. Meu dia a dia consiste em trabalhos de campo, como
+            levantamentos em pista, conferência de serviços, e acompanhamento do andamento da obra, mas também na parte
+            de escritório, como programação e planejamento de serviços, elaboração de relatórios, entre outros.</p>
+        <img src="ImagemPavimentação.jpg" alt="Imagem de pavimentação" class="img2">
+        <img src="ImagemPavimentação2.jpg" alt="Imagem de pavimentação2" class="img2">
+        <br>
+
+        <p>Tenho como principal hobbie jogar no computador, onde me divirto muito com meus amigos. Inclusive foi através
+            dos jogos que aprimorei meu inglês e hoje consigo me cumincar muito bem com ele. Os jogos fizeram parte de
+            toda minha infância, desde quando ganhei meu primeiro vídeo-game e computador desktop. Meus estilos de jogos
+            preferidos são FPS e MMORPG.<br>
+            Ainda falando de jogos, não apenas jogos digitais me encantam, como também jogos de tabuleiros e cartas,
+            como banco imobiliário, coup, imagem & ação, truco e poker, sendo poker meu jogo "de azar" favorito.<br>
+            Também gosto muito de ver filmes e séries em dias que não estou tão animado para jogar ou quando meus amigos
+            não estão online.<br>
+            Meu esporte preferido é vôlei de praia. Algumas vezes na semana combinamos entre amigos de jogar para se
+            divertir, se exercitar e mexer um pouco o
+            esqueleto. Meu segundo esporte preferido é o tênis de mesa, famoso ping pong, mas esse jogo com bem menos
+            frequência.<br>
+            Quando sobra tempo no final de semana, também costumo ler algumas páginas de alguns livros sobre tecnologia,
+            matérias, notícias e vídeos para ficar antenado.
+        </p>
+        <img src="ImagemJogo.webp" alt="Imagem de jogo de guerra" class="img2">
+        <img src="ImagemMMORPG.jpg" alt="Imagem de jogo mmorpg" class="img2">
+        <img src="ImagemVolei.jpg" alt="Imagem de vôlei de praia" class="img2">
+        <img src="ImagemPoker.jpg" alt="Imagem de poker" class="img2">
+        <br>
+
+        <p>Esse interesse que sempre tive por tecnologia me motivou a iniciar uma nova graduação em Engenharia de
+            Software, buscando unir minha formação em engenharia com a área de desenvolvimento e inovação tecnológica,
+            buscando futuramente uma migração total para a área de programação. Dois principais motivos que me fizeram
+            querer mudar de área é pela flexibilidade de trabalho (HomeOffice) e possibilidade de trabalhar em empresas
+            fora do Brasil. </p>
+        <img src="ImagemTecnologia.jpg" alt="Imagem de códigos" class="img2">
+        <img src="ImagemTecnologia2.png" alt="Imagem de códigos" class="img2">
+        <br>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <p>
+            
+        </p>
+    </section>
+
+    <section id="formacao">
+        <h2>Formação educacional e idiomas</h2>
+        <p>Estudei desde pequeno em escola pública estadual. Terminei o ensino médio e comecei uma faculdade
+            logo em sequência na profissão que já havia escolhido desde o 1º ano do ensino médio, Engenharia Civil.
+            Passei 5 anos estudando em uma faculdade particular, entretanto com bolsa de 50% pelo ProUni, por meio do
+            ENEM. Finalizei a faculdade e após 1 ano de formado, iniciei um novo curso de graduação em Engenharia de
+            Software, pois sempre tive muita afinidade com computadores.</p><br>
+
+        <p>Nunca fiz um teste de proficiência em inglês para saber meu nível ao certo, porém consigo ler,
+            escrever e me comunicar de forma aceitável, podendo talvez ser considerado intermediário. Fiz 2 anos de
+            curso básico de inglês na escola pública em que estudava e depois disso foi apenas por conta própria,
+            principalmente com jogos em que sem o inglês não se entendia muito bem a progressão. Também tenho a língua
+            italiana básica, em um curso que fiz particular.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+            <input type="email" id="email" placeholder="Digite seu e-mail. Ex: @gmail.com, @hotmail.com">
+            <input type="number" id="tel" placeholder="Digite seu número. Ex: (xx) 9xxxx-xxxx">
+            <textarea placeholder="Digite sua mensagem"></textarea>
+            <button type="submit" onclick="validarForm(), enviarMensagem()">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Atividade Prática - Gabriel Cancellier</p>
+    </footer>
+
+    <script>
+        /*
+        Função em JavaScript para forçar o usuário a digitar os 3 campos obrigatórios do formulário de contato.
+        Foi criado 3 variáveis puxando o id dos 3 itens obrigatórios do formulário, salvado o valor e retirado espaços vazios (trim);
+        Dessa forma "se" 1 ou mais itens obrigatórios estiverem sem preenchimento, quando clicar no botão "enviar" aparecerá um alerta avisando para preencher os campos obrigatórios, do contrário vai retornar que foi enviado com sucesso.
+        */
+        function validarForm() {
+            let nome = document.getElementById("nome").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let telefone = document.getElementById("tel").value.trim();
+
+            if (nome === "" || email === "" || telefone === "") {
+                alert("Você precisa preencher os campos obrigatórios!");
+                return false;
+            }
+            alert("Enviado com sucesso!")
+            return true;
+        }
+
+        function enviarMensagem() {
+            document.getElementById("nome").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("tel").value = "";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Gabriel Cancellier</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="imagemcontato">
+
+    <header>
+
+        <h1>Contato</h1>
+
+    </header>
+
+    <section>
+
+        <ul class="list2">
+            <li><a href="sobremim.html" class="btn">Sobre mim</a></li>
+            <li><a href="formacao.html" class="btn">Formação educacional e idiomas</a></li>
+            <li><a href="portfolio.html" class="btn">Portfólio</a></li>
+            <li><a href="index.html" class="btn2">Voltar para a página principal</a></li>
+        </ul>
+
+    </section>
+
+    <main id="main4">
+
+        <p class="p4">Gostaria de entrar em contato? Deixe suas informações abaixo que enviaremos um e-mail para você!</p><br>
+            <form onsubmit="return validarForm()" class="f5">
+            <input type="text" class="inputs" id="nome" placeholder="Digite seu nome completo"> Nome*
+            <input type="text" class="inputs" id="email" placeholder="fuladodetal@gmail.com"> E-mail*
+            <input type="text" class="inputs" id="telefone" placeholder="(xx) 9xxxx-xxxx"> Telefone*
+            <textarea class="inputs" placeholder="Digite uma mensagem (opcional)"></textarea> Mensagem
+            </form>
+        <button id="btnenviar" onclick="validarForm(),enviarMensagem()">Enviar</button>
+    </main>
+
+    <script>
+        function enviarMensagem () {
+            document.getElementById("nome").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("telefone").value = "";
+        }
+
+        function validarForm () {
+            let nome = document.getElementById("nome").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let telefone = document.getElementById("telefone").value.trim();
+
+            if (nome === "" || email === "" || telefone === "") {
+                alert("Você precisa preencher os campos obrigatórios!");
+                return false;
+            }
+                alert("Enviado com sucesso!")
+                return true;
+        }
+    </script>
+</body>
+
+</html>
