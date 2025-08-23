@@ -56,12 +56,6 @@ p {
     text-align: justify;
 }
 
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 footer {
     background-color: #333;
     color: white;
@@ -93,4 +87,22 @@ form > button {
 
 form > button:hover {
     background-color: #705c45;
+}
+
+#siteTeste {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+#siteTeste:hover {
+    background-color: #8b5920;
+    text-decoration: underline;
 }
